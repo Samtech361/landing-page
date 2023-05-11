@@ -87,11 +87,55 @@ button{
 .nav-menu .close-btn{
     display: none;
 }
+.show{
+    right: 3% !important;
+}
+
+
 @media screen and (min-width: 768px){
     .toggle-btn{
         display: none;
     }
     .nav-menu{
         display: block;
+    }
+}
+@media screen and (max-width:768px){
+    .logo h2{
+       font-size: 23px;
+    }
+    .nav-menu{
+        position: fixed;
+        width: 93%;
+        height: 100%;
+        display: block;
+        top: 2.5%;
+        right: -100%;
+        background-color: #fff;
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+        z-index: 50;
+        transition: 0.4s;
+    }
+    .nav-menu-list{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 4rem;
+    }
+    .nav-menu-list .nav-menu-item{
+        margin: 1rem 0;
+    }.nav-menu-item .nav-menu-link{
+        font-size: 18px;
+    }
+    .close-btn{
+        display: block;
+        position: absolute;
+        right: 10px;
+        font-size: 25px;
+        color: #50689e;
+    }
+    .close-btn:hover{
+        color: #000;
     }
 }
